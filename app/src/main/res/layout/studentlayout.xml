@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="25dp"
+    app:cardBackgroundColor="@android:color/holo_orange_dark">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/studentImage"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/studentImage"
+        android:id="@+id/studentName"
+        android:text="name"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentAddress"
+        android:layout_below="@+id/studentName"
+        android:layout_marginTop="2dp"
+        android:text="address"
+        android:layout_toEndOf="@+id/studentImage"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentPhone"
+        android:layout_below="@id/studentAddress"
+        android:text="phone"
+        android:layout_toEndOf="@+id/studentImage"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"/>
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentRate"
+        android:layout_below="@+id/studentImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:numStars="3" />
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
